@@ -7,19 +7,22 @@ var md5 = require('md5');
 app.get('/:tagId', (req, res) => {
     var id = req.params.tagId;
     var value = '';
-    for(let i=0; i< 100000; i++) {
-        value = id
-    }
+    // for(let i=0; i< 100000; i++) {
+    //     value = id
+    // }
+    value = id
     console.log('2')
+    value = 'aaa'
     res.send(value);
 })
 
 app.get('/hash/:tagId', (req, res) => {
     var id = req.params.tagId;
     var value = '';
-    for(let i=0; i< 100000; i++) {
-        value = md5(id)
-    }
+    // for(let i=0; i< 100000; i++) {
+    //     value = md5(id)
+    // }
+    value = md5(id)
     res.send(value);
 })
 
