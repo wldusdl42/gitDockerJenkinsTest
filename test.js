@@ -12,7 +12,7 @@ app.get('/:tagId', (req, res) => {
     // }
     value = id
     console.log('2')
-    value = 'aaaaㅂ'
+    value = 'aaaaㅂㅈㅁㅁㅈ'
     res.send(value);
 })
 
