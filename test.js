@@ -10,6 +10,7 @@ app.get('/:tagId', (req, res) => {
     for(let i=0; i< 100000; i++) {
         value = id
     }
+    console.log('1')
     res.send(value);
 })
 
