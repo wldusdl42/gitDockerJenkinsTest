@@ -11,8 +11,7 @@ app.get('/:tagId', (req, res) => {
     //     value = id
     // }
     value = id
-    console.log('2')
-    value = 'aaaaㅂㅈㅁㅁㅈ1111'
+    // value = 'aaaaㅂㅈㅁㅁㅈ1111'
     res.send(value);
 })
 
