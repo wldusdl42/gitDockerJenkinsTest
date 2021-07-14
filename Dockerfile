@@ -1,4 +1,4 @@
-FROM node:12.16.0
+FROM node:10
 MAINTAINER Jiyeon Kim <wldusdl34@gmail.com>
 
 # ENV NODE_ENV=production
@@ -9,11 +9,10 @@ MAINTAINER Jiyeon Kim <wldusdl34@gmail.com>
 # COPY . .
 
 # Create app directory
-RUN mkdir -p .
-WORKDIR .
+WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY package.json ./
+COPY package*.json ./
 RUN npm install
 
 # Bundle app source
