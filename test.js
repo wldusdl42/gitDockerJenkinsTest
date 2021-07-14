@@ -10,8 +10,8 @@ app.get('/:tagId', (req, res) => {
     // for(let i=0; i< 100000; i++) {
     //     value = id
     // }
-    // value = id
-    value = 'aaaaㅂㅈㅁㅁㅈ1111'
+    value = id
+    // value = 'aaaaㅂㅈㅁㅁㅈ1111'
     res.send(value);
 })
 
